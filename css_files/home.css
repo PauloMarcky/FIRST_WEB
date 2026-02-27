@@ -1,0 +1,71 @@
+#home_container {
+  padding-left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  text-align: left;
+}
+
+.contents {
+  width: 700px;
+  display: grid;
+  grid-template-rows: 150px 80px 50px 100px;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+#home_container .phrase {
+  color: hsl(0, 0%, 100%);
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+#home_container .sub-title {
+  color: hsl(0, 100%, 24%);
+  font-family: Arial;
+  font-size: 20px;
+  padding-left: 5px;
+  text-shadow:
+    -1px -1px 1px rgb(255, 255, 255),
+    1px -1px 1px rgb(255, 255, 255),
+    -1px 1px 1px rgb(255, 255, 255),
+    1px 1px 1px rgb(255, 255, 255);
+}
+
+#home_container .title {
+  color: hsl(0, 100%, 24%);
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 28px;
+  text-shadow:
+    -1px -1px 2px rgb(255, 255, 255),
+    1px -1px 2px rgb(255, 255, 255),
+    -1px 1px 2px rgb(255, 255, 255),
+    1px 1px 3px rgb(255, 255, 255);
+}
+
+#homePage #signIn_button {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  box-shadow: none;
+  border-radius: 10px;
+  border: 1px solid red;
+  font-size: 13px;
+  font-weight: 550;
+  width: 180px;
+  height: 50px;
+  font-family: Arial;
+  transition: .2s ease-out;
+}
+
+.button {
+  padding-left: 6px;
+}
+
+#homePage #signIn_button:hover {
+  box-shadow: .5px 0 10px rgb(255, 0, 0);
+}

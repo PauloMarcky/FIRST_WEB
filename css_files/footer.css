@@ -1,0 +1,9 @@
+footer{
+  height: 30px;
+  width: 100%;
+  background-color: rgb(175, 168, 168);
+  position: fixed;
+  bottom: 0;
+  border-top:1px solid rgb(255, 255, 255);
+  box-shadow: .5px 0.3px rgb(255, 255, 255);
+}
