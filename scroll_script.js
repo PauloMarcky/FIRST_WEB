@@ -24,8 +24,8 @@ home.addEventListener("click",
 
 about.addEventListener("click",
   function () {
-    currentPage = 1;
-    updateBTN();
+    currentPage = 0;
+    updatePrevBTN();
     updateNextBTN();
 
     links.forEach(link => link.classList.remove("active"));
@@ -43,6 +43,11 @@ contact.addEventListener("click",
     links[2].classList.add("active");
     pages[2].scrollIntoView({ behavior: "smooth", inline: "start" });
   });
+
+logIn.addEventListener("click",
+  function () {
+    open_logIn()
+  })
 
 function nextPage() {
   if (currentPage < pages.length - 1) {
@@ -84,11 +89,11 @@ function updateNextBTN() {
     next.style.opacity = 1;
   }
 }
-function goLogIn() {
-  alert("LETS LOG IN BRO!")
+
+function open_logIn() {
+  window.location.href = "login_page.html";
 }
 
 next.addEventListener("click", nextPage);
 previous.addEventListener("click", previousPage);
-logIn.addEventListener("click", goLogIn)
 
